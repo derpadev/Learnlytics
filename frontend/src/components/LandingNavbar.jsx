@@ -6,7 +6,7 @@ const navItems = [
   { name: "About", href: "/About" }
 ];
 
-export const Navbar = () => {
+export const LandingNavbar = () => {
   return (
     <nav className="border border-black">
       <div className="border border-black container  mx-auto px-4 flex items-center justify-between py-4">
@@ -19,6 +19,10 @@ export const Navbar = () => {
               {item.name}
             </a>
           ))}
+        </div>
+        <div className="border border-black mx-20 p-6 space-x-6 font-semibold text-lg">
+          <button className=" bg-white px-8 py-2 rounded-lg">Sign in</button>
+          <button className="text-white bg-[#1E1E1E] px-8 py-2 rounded-lg">Sign up</button>
         </div>
       </div>
     </nav>

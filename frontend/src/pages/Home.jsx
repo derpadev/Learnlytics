@@ -1,26 +1,26 @@
+import { LandingNavbar } from "../components/LandingNavbar";
 import { Navbar } from "../components/NavBar";
-import { useEffect, useState } from "react";
 import React from "react";
-// import { ThemeToggle } from "../components/ThemeToggle";
 
 export const Home = () => {
 
-    const [message, setMessage] = useState("");
-    
-    useEffect(() => {
-        fetch("http://localhost:5000/").then((res) => res.text()).then((data) => setMessage(data));
-    }, []);
-
   return (
-    <div>
-      {/* Theme Toggle */}
-      {/* Background Effects*/}
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Nav Bar */}
-      <Navbar />
+      <LandingNavbar />
       {/* Main Content */}
       <main>
-        <h1> Learnlytics </h1>
-        <p>{message}</p>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-6">
+          <div className="border">
+            <h1 className="text-9xl font-semibold">Track.</h1>
+            <h1 className="text-9xl font-semibold">Learn.</h1>
+            <h1 className="text-9xl font-semibold">Improve.</h1>
+          </div>
+          <div className="border m-5 font-semibold text-2xl">
+            <p>Monitor your performance, identify strengths, and improve</p>
+            <p>your learning outcomes - all in one dashboard.</p>
+          </div>
+        </div>
       </main>
 
       {/* Footer */}
