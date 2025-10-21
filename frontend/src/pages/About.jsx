@@ -1,5 +1,5 @@
-import React from "react"
-import { Navbar } from "../components/NavBar";
+import React from "react";
+import { Navbar } from "../components/Navbar";
 
 export const About = () => {
     return (
@@ -7,8 +7,8 @@ export const About = () => {
         {/* Nav Bar */}
         <Navbar />
         {/* Main Content */}
-        <main>
-            <div>About</div>
+        <main className="flex items-center justify-center text-9xl">
+            <h1>About</h1>
         </main>
     </div>
     );
