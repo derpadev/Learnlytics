@@ -2,8 +2,9 @@ import React from "react";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "Feature", href: "/Feature" },
-  { name: "About", href: "/About" }
+  { name: "Explore", href: "#Explore" },
+  { name: "Product", href: "#Product" },
+  { name: "Developer", href: "#Developer" },
 ];
 
 export const LandingNavbar = () => {
@@ -15,7 +16,7 @@ export const LandingNavbar = () => {
         </div>
         <div className="p-6 space-x-8 font-semibold text-3xl">
           {navItems.map((item, key) => (
-            <a key={key} href={item.href} className="">
+            <a key={key} href={item.href}>
               {item.name}
             </a>
           ))}

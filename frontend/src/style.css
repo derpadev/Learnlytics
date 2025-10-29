@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --background-gradient: radial-gradient(circle, hsl(0, 0%, 96.1%), hsla(209, 100%, 81%, 1.00));
 }
