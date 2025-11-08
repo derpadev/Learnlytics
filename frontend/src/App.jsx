@@ -20,6 +20,8 @@ import { Dashboard } from "./pages/Dashboard";
 import { Landing } from "./pages/Landing";
 import { Navbar } from "./components/Navbar";
 
+console.log(import.meta.env.VITE_SUPABASE_URL);
+
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);

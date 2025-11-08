@@ -20,6 +20,9 @@ export const Signup = () => {
     const { data, error: signUpError } = await supabase.auth.signUp({
       email,
       password,
+      options: {
+        data: { full_name: name }
+      }
     });
 
     if (signUpError) {
